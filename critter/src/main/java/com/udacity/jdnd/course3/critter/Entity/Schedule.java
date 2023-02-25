@@ -29,7 +29,6 @@ public class Schedule {
     private LocalDate date;
 
     @ElementCollection
-    @Enumerated(EnumType.STRING)
     private Set<EmployeeSkill> activities;
 
     public long getId() {

@@ -16,11 +16,9 @@ public class Employee {
     private String name;
 
     @ElementCollection(fetch = FetchType.EAGER, targetClass = EmployeeSkill.class)
-    @Enumerated(EnumType.STRING)
     private Set<EmployeeSkill> skills;
 
     @ElementCollection(fetch =FetchType.EAGER,  targetClass = DayOfWeek.class)
-    @Enumerated(EnumType.STRING)
     private Set<DayOfWeek> daysAvailable;
 
     @ManyToMany(fetch = FetchType.LAZY,mappedBy = "employees",cascade = CascadeType.ALL)

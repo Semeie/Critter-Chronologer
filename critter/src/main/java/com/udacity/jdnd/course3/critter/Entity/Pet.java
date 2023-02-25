@@ -12,14 +12,13 @@ public class Pet {
     @GeneratedValue
     private long id;
 
-    @Enumerated(EnumType.STRING)
     private PetType type;
 
     @Nationalized
     private String name;
 
     @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-    @JoinColumn(name = "owner_id", referencedColumnName = "id")
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
     @ManyToMany(fetch = FetchType.LAZY,mappedBy = "pets", cascade = CascadeType.ALL)
