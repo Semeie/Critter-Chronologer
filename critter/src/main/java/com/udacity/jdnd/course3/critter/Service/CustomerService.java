@@ -13,8 +13,7 @@ public class CustomerService {
     @Autowired
     CustomerRepository customerRepository;
 
-    public Customer saveCustomer(Customer customer){
-       return customerRepository.save(customer);
+    public Customer saveCustomer(Customer customer){return customerRepository.save(customer);
     }
     public List<Customer> findAllCustomers(){
         return customerRepository.findAll();

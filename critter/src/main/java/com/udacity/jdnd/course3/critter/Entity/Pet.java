@@ -1,6 +1,6 @@
 package com.udacity.jdnd.course3.critter.Entity;
 
-import com.udacity.jdnd.course3.critter.Entity.Enum.PetType;
+import com.udacity.jdnd.course3.critter.Enum.PetType;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity
 public class Pet {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private PetType type;

@@ -1,6 +1,6 @@
 package com.udacity.jdnd.course3.critter.Entity;
 
-import com.udacity.jdnd.course3.critter.Entity.Enum.EmployeeSkill;
+import com.udacity.jdnd.course3.critter.Enum.EmployeeSkill;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity
 public class Employee {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Nationalized

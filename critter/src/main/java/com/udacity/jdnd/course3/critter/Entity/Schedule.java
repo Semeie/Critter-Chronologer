@@ -1,6 +1,6 @@
 package com.udacity.jdnd.course3.critter.Entity;
 
-import com.udacity.jdnd.course3.critter.Entity.Enum.EmployeeSkill;
+import com.udacity.jdnd.course3.critter.Enum.EmployeeSkill;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity
 public class Schedule {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @ManyToMany(fetch = FetchType.LAZY,cascade = CascadeType.ALL)

@@ -1,7 +1,7 @@
 package com.udacity.jdnd.course3.critter.Service;
 
 import com.udacity.jdnd.course3.critter.Entity.Employee;
-import com.udacity.jdnd.course3.critter.Entity.Enum.EmployeeSkill;
+import com.udacity.jdnd.course3.critter.Enum.EmployeeSkill;
 import com.udacity.jdnd.course3.critter.Repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

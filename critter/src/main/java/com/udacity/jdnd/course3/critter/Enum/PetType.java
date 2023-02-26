@@ -1,4 +1,4 @@
-package com.udacity.jdnd.course3.critter.Entity.Enum;
+package com.udacity.jdnd.course3.critter.Enum;
 
 /**
  * A example list of pet type metadata that could be included on a request to create a pet.
