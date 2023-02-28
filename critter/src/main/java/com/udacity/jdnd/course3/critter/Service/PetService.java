@@ -17,19 +17,18 @@ public class PetService {
         return petRepository.save(pet);
     }
 
-    public Pet findPet(Long id){
-        return petRepository.findById(id).get();
+    public Pet findPet(Long petId){
+        return petRepository.findById(petId).get();
     }
 
-    public List<Pet> findAllPets(){
-        return petRepository.findAll();
-    }
-    public List<Pet> findPetsByIds(List<Long> ids){
-        return petRepository.findAllById(ids);
+    public List<Pet> findAllPets(){return petRepository.findAll();}
+
+    public List<Pet> findPetsByIds(List<Long> petIds){
+        return petRepository.findAllById(petIds);
     }
 
-    public List<Pet> findPetsByOwner(Long id){
-        return petRepository.findAllByCustomerId(id);
+    public List<Pet> findPetsByOwner(Long customerId){
+        return petRepository.findAllByCustomerId(customerId);
     }
 }
 

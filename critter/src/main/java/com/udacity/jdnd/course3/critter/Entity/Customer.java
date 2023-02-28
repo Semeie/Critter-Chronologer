@@ -8,7 +8,7 @@ import java.util.List;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     @Nationalized
     private String name;
@@ -21,7 +21,7 @@ public class Customer {
     private List<Pet> pets;
 
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 

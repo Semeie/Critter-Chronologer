@@ -24,14 +24,14 @@ public class ScheduleService {
     public List<Schedule> findAllSchedules(){
         return scheduleRepository.findAll();
     }
-    public List<Schedule> findScheduleForPet(Long id){
-        return scheduleRepository.findByPetsId(id);
+    public List<Schedule> findScheduleForPet(Long petId){
+        return scheduleRepository.findByPetsId(petId);
     }
-    public List<Schedule> findScheduleForEmployee(Long id){return scheduleRepository.findByEmployeesId(id);
+    public List<Schedule> findScheduleForEmployee(Long employeeId){return scheduleRepository.findByEmployeesId(employeeId);
     }
-    public List<Schedule> findScheduleForCustomer(Long id){
-      List<Pet> pets = petRepository.findAllByCustomerId(id);
-      List<Long> ids = pets.stream().map(Pet::getId).collect(Collectors.toList());
-      return scheduleRepository.findByPetsIdIn(ids);
+    public List<Schedule> findScheduleForCustomer(Long customerId){
+      List<Pet> pets = petRepository.findAllByCustomerId(customerId);
+      List<Long> petIds = pets.stream().map(Pet::getId).collect(Collectors.toList());
+      return scheduleRepository.findByPetsIdIn(petIds);
     }
 }

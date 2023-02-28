@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface PetRepository extends JpaRepository<Pet,Long> {
-    List<Pet> findAllByCustomerId(Long id);
+    List<Pet> findAllByCustomerId(Long customerId);
 }

@@ -22,13 +22,11 @@ public class EmployeeService {
         return employeeRepository.save(employee);
     }
 
-    public Employee findEmployee(Long id){
-        return employeeRepository.findById(id).get();
+    public Employee findEmployee(Long employeeId){
+        return employeeRepository.findById(employeeId).get();
     }
 
-    public List<Employee> findAllEmployees(List<Long> ids){
-        return employeeRepository.findAllById(ids);
-    }
+    public List<Employee> findAllEmployees(List<Long> employeeIds){return employeeRepository.findAllById(employeeIds);}
 
     public List<Employee> findEmployeesForService(Set<EmployeeSkill> skills, DayOfWeek day){
         return employeeRepository.findAllByDaysAvailableContaining(day).stream()
