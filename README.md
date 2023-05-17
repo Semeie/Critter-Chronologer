@@ -78,3 +78,36 @@ Each entry in this collection contains information in its `Body` tab if necessar
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md]()
+
+## Screenshots
+<details>
+<summary>Click here to show the screenshots of project</summary>
+ <br>
+ <p> save customer </p>
+ <img src ="Screenshots/Postman tests/save customer.png">
+ <p> save pet </p>
+ <img src ="Screenshots/Postman tests/save pet.png">
+ <p> save employee </p>
+ <img src ="Screenshots/Postman tests/save employee.png">
+  <p> AddEmployeeSchedule </p>
+ <img src ="Screenshots/Postman tests/AddEmployeeSchedule.png">
+  <p> CheckAvailabilty </p>
+ <img src ="Screenshots/Postman tests/CheckAvailabilty.png">
+  <p> create schedule </p>
+ <img src ="Screenshots/Postman tests/create schedule.png">
+  <p> FindScheduleByPet </p>
+ <img src ="Screenshots/Postman tests/FindScheduleByPet.png">
+  <p> FindScheduleByEmployee </p>
+ <img src ="Screenshots/Postman tests/FindEmployeeBySchedule.png">
+  <p> get all customers </p>
+ <img src ="Screenshots/Postman tests/get all customers.png">
+  <p> GetAllPets </p>
+ <img src ="Screenshots/Postman tests/GetAllPets.png">
+   <p> GetPetsByOwner </p>
+ <img src ="Screenshots/Postman tests/GetPetsByOwner.png">
+   <p> getOwnerByPet </p>
+ <img src ="Screenshots/Postman tests/getOwnerByPet.png">
+   <p> All_tests_passed </p>
+ <img src ="Screenshots/All_tests_passed.png">
+</details>
+
